@@ -24,13 +24,24 @@ Special thanks to @scribblemaniac for his support on this project.
 
 How-to use
 ==========
+1st step:
 To download and compile last script version just be sure you are connected to
 the Internet and run:
 
 ```
-$ wget https://raw.githubusercontent.com/gonzalo/gphoto2-updater/master/gphoto2-updater.sh && wget https://raw.githubusercontent.com/gonzalo/gphoto2-updater/master/.env && chmod +x gphoto2-updater.sh && sudo ./gphoto2-updater.sh
+$ wget https://raw.githubusercontent.com/diridare/gphoto2-updater/dare/installGPhoto2_1.sh && https://raw.githubusercontent.com/diridare/gphoto2-updater/dare/installGPhoto2_2.sh && wget https://raw.githubusercontent.com/gonzalo/gphoto2-updater/master/.env && chmod +x installGPhoto2_1.sh && chmod +x installGPhoto2_2.sh && sudo ./installGPhoto2_1.sh
 ```
 This will download both .env and script files and run the script. Then select between stable and development version
+
+2nd step:
+fix the Fujjfilm X T-2 bug with 3sec trigger - https://github.com/gphoto/gphoto2/issues/229
+
+3rd step:
+Run second part of script:
+
+```
+$ sudo ./installGPhoto2_2.sh
+```
 
 Check releases
 https://github.com/gonzalo/gphoto2-updater/releases
